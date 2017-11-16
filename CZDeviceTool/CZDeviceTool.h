@@ -38,12 +38,14 @@ FOUNDATION_EXPORT NSString *const kTCInfoCFBundleName;
 + (BOOL)iOS8System;
 + (BOOL)iOS9System;
 + (BOOL)iOS10System;
++ (BOOL)iOS11System;
 
 // 判断屏幕尺寸
 + (BOOL)isScreen35;
 + (BOOL)isScreen40;
 + (BOOL)isScreen47;
 + (BOOL)isScreen55;
++ (BOOL)isScreen58;
 
 /** 屏幕宽度，会随着屏幕旋转而改变：竖屏时为窄边，横屏时为宽边 */
 + (CGFloat)screenWidth;

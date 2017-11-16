@@ -89,19 +89,28 @@ NSString *const kTCInfoCFBundleName = @"CFBundleName";
 	}
 	return [[CZDeviceTool systemVersion] floatValue] >= 10 && [[CZDeviceTool systemVersion] floatValue] < 11;
 }
++ (BOOL)iOS11System {
+    if (!CZDeviceTool.iOS) {
+        return NO;
+    }
+    return [[CZDeviceTool systemVersion] floatValue] >= 11 && [[CZDeviceTool systemVersion] floatValue] < 12;
+}
 
 // 判断屏幕尺寸
 + (BOOL)isScreen35 {
-	return [CZDeviceTool screenMaxLength] == 480 ? YES:NO;
+	return [CZDeviceTool screenMaxLength] == 480 ? YES : NO;
 }
 + (BOOL)isScreen40 {
-	return [CZDeviceTool screenMaxLength] == 568 ? YES:NO;
+	return [CZDeviceTool screenMaxLength] == 568 ? YES : NO;
 }
 + (BOOL)isScreen47 {
-	return [CZDeviceTool screenMaxLength] == 667 ? YES:NO;
+	return [CZDeviceTool screenMaxLength] == 667 ? YES : NO;
 }
 + (BOOL)isScreen55 {
-	return [CZDeviceTool screenMaxLength] == 736 ? YES:NO;
+	return [CZDeviceTool screenMaxLength] == 736 ? YES : NO;
+}
++ (BOOL)isScreen58 {
+    return [CZDeviceTool screenMaxLength] == 812 ? YES : NO;
 }
 
 + (CGFloat)screenWidth {
