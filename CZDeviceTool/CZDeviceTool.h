@@ -24,12 +24,14 @@ FOUNDATION_EXPORT NSString *const kTCInfoCFBundleName;
 + (NSString *)bundleVersion;
 + (NSString *)bundleName;
 
+/** 获取设备所有者设置的名称，如：Clay's iPhone */
++ (NSString *)deviceName;
 + (NSString *)systemName;
 + (NSString *)systemVersion;
 /** 返回当前系统的语言环境（en：英文，zh-Hans：简体中文，zh-Hant：繁体中文，ja：日本） */
 + (NSString *)systemLanguage;
 
-// determine system version
+// 判断系统版本
 + (BOOL)iOS;
 + (BOOL)iOS6orLess;
 + (BOOL)iOS7System;
@@ -37,7 +39,7 @@ FOUNDATION_EXPORT NSString *const kTCInfoCFBundleName;
 + (BOOL)iOS9System;
 + (BOOL)iOS10System;
 
-// determine screen
+// 判断屏幕尺寸
 + (BOOL)isScreen35;
 + (BOOL)isScreen40;
 + (BOOL)isScreen47;
@@ -54,7 +56,7 @@ FOUNDATION_EXPORT NSString *const kTCInfoCFBundleName;
 /** 根据开发所用的点（pt）计算屏幕上的物理像素值（px） */
 + (CGFloat)pxWithPt:(CGFloat)pt;
 
-/** current device model */
+/** 设备型号，如：iPhone 6 */
 + (NSString *)deviceModel;
 
 @end
