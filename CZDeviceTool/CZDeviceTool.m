@@ -122,11 +122,8 @@ NSString *const kTCInfoCFBundleName = @"CFBundleName";
 }
 /** 根据开发所用的点（pt）计算屏幕上的物理像素值（px） */
 + (CGFloat)pxWithPt:(CGFloat)pt {
-    if ([CZDeviceTool isScreen55]) {
-        return pt * 3;
-    } else {
-        return pt * 2;
-    }
+    CGFloat scale = [UIScreen mainScreen].scale;
+    return pt * scale;
 }
 
 /** current device model */
