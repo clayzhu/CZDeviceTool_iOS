@@ -13,7 +13,7 @@
 		6F7F61FB1F3C269D00DBBFE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F7F61F91F3C269D00DBBFE9 /* Main.storyboard */; };
 		6F7F61FD1F3C269D00DBBFE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F7F61FC1F3C269D00DBBFE9 /* Assets.xcassets */; };
 		6F7F62001F3C269D00DBBFE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F7F61FE1F3C269D00DBBFE9 /* LaunchScreen.storyboard */; };
-		6F7F620A1F3C26D900DBBFE9 /* CZDeviceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7F62091F3C26D900DBBFE9 /* CZDeviceTool.m */; };
+		E65CF8291FBD356E00308486 /* CZDeviceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E65CF8271FBD356E00308486 /* CZDeviceTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		6F7F61FC1F3C269D00DBBFE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F7F61FF1F3C269D00DBBFE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F7F62011F3C269D00DBBFE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6F7F62081F3C26D900DBBFE9 /* CZDeviceTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZDeviceTool.h; sourceTree = "<group>"; };
-		6F7F62091F3C26D900DBBFE9 /* CZDeviceTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZDeviceTool.m; sourceTree = "<group>"; };
+		E65CF8271FBD356E00308486 /* CZDeviceTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZDeviceTool.m; sourceTree = "<group>"; };
+		E65CF8281FBD356E00308486 /* CZDeviceTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZDeviceTool.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				6F7F61EF1F3C269D00DBBFE9 /* CZDeviceToolDemo */,
-				6F7F62071F3C26D900DBBFE9 /* CZDeviceTool */,
+				E65CF8261FBD356E00308486 /* CZDeviceTool */,
 				6F7F61EE1F3C269D00DBBFE9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,13 +83,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6F7F62071F3C26D900DBBFE9 /* CZDeviceTool */ = {
+		E65CF8261FBD356E00308486 /* CZDeviceTool */ = {
 			isa = PBXGroup;
 			children = (
-				6F7F62081F3C26D900DBBFE9 /* CZDeviceTool.h */,
-				6F7F62091F3C26D900DBBFE9 /* CZDeviceTool.m */,
+				E65CF8281FBD356E00308486 /* CZDeviceTool.h */,
+				E65CF8271FBD356E00308486 /* CZDeviceTool.m */,
 			);
-			path = CZDeviceTool;
+			name = CZDeviceTool;
+			path = ../CZDeviceTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F7F620A1F3C26D900DBBFE9 /* CZDeviceTool.m in Sources */,
+				E65CF8291FBD356E00308486 /* CZDeviceTool.m in Sources */,
 				6F7F61F81F3C269D00DBBFE9 /* ViewController.m in Sources */,
 				6F7F61F51F3C269D00DBBFE9 /* AppDelegate.m in Sources */,
 				6F7F61F21F3C269D00DBBFE9 /* main.m in Sources */,
@@ -327,6 +328,7 @@
 				6F7F62061F3C269D00DBBFE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
