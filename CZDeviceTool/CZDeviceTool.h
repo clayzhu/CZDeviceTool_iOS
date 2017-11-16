@@ -45,9 +45,9 @@ FOUNDATION_EXPORT NSString *const kTCInfoCFBundleName;
 + (BOOL)isScreen47;
 + (BOOL)isScreen55;
 
-/** 屏幕宽度 */
+/** 屏幕宽度，会随着屏幕旋转而改变：竖屏时为窄边，横屏时为宽边 */
 + (CGFloat)screenWidth;
-/** 屏幕高度 */
+/** 屏幕高度，会随着屏幕旋转而改变：竖屏时为宽边，横屏时为窄边 */
 + (CGFloat)screenHeight;
 /** 屏幕长的一边 */
 + (CGFloat)screenMaxLength;
@@ -55,6 +55,10 @@ FOUNDATION_EXPORT NSString *const kTCInfoCFBundleName;
 + (CGFloat)screenMinLength;
 /** 根据开发所用的点（pt）计算屏幕上的物理像素值（px） */
 + (CGFloat)pxWithPt:(CGFloat)pt;
+/** 屏幕物理像素宽度，会随着屏幕旋转而改变：竖屏时为窄边，横屏时为宽边 */
++ (CGFloat)physicalScreenWidth;
+/** 屏幕物理像素高度，会随着屏幕旋转而改变：竖屏时为宽边，横屏时为窄边 */
++ (CGFloat)physicalScreenHeight;
 
 /** 设备型号，如：iPhone 6 */
 + (NSString *)deviceModel;

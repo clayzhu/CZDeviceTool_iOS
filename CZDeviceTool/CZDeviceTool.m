@@ -104,26 +104,34 @@ NSString *const kTCInfoCFBundleName = @"CFBundleName";
 	return [CZDeviceTool screenMaxLength] == 736 ? YES:NO;
 }
 
-/** 屏幕宽度 */
 + (CGFloat)screenWidth {
 	return [UIScreen mainScreen].bounds.size.width;
 }
-/** 屏幕高度 */
 + (CGFloat)screenHeight {
 	return [UIScreen mainScreen].bounds.size.height;
 }
-/** 屏幕长的一边 */
 + (CGFloat)screenMaxLength {
 	return MAX(CZDeviceTool.screenWidth, CZDeviceTool.screenHeight);
 }
-/** 屏幕短的一边 */
 + (CGFloat)screenMinLength {
 	return MIN(CZDeviceTool.screenWidth, CZDeviceTool.screenHeight);
 }
-/** 根据开发所用的点（pt）计算屏幕上的物理像素值（px） */
 + (CGFloat)pxWithPt:(CGFloat)pt {
     CGFloat scale = [UIScreen mainScreen].scale;
     return pt * scale;
+}
++ (CGFloat)physicalScreenWidth {
+    CGFloat scale = [UIScreen mainScreen].scale;
+    CGFloat screenWidth = [CZDeviceTool screenWidth];
+    return screenWidth * scale;
+    
+//    // 下面是另一种获取物理像素的方法。这种方法不会随着屏幕旋转而改变
+//    CGRect nativeBounds = [UIScreen mainScreen].nativeBounds;
+}
++ (CGFloat)physicalScreenHeight {
+    CGFloat scale = [UIScreen mainScreen].scale;
+    CGFloat screenHeight = [CZDeviceTool screenHeight];
+    return screenHeight * scale;
 }
 
 /** current device model */
