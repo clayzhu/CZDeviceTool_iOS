@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@class CZDeviceInfoModel;
+
 /** info.plist key */
 FOUNDATION_EXPORT NSString *const kTCInfoBundleDisplayName;
 FOUNDATION_EXPORT NSString *const kTCInfoBundleShortVersionString;
@@ -63,6 +65,19 @@ FOUNDATION_EXPORT NSString *const kTCInfoCFBundleName;
 + (CGFloat)physicalScreenHeight;
 
 /** 设备型号，如：iPhone 6 */
-+ (NSString *)deviceModel;
++ (CZDeviceInfoModel *)deviceModel;
+
+@end
+
+@interface CZDeviceInfoModel : NSObject
+
+/** 设备型号内部名称，如：iPhone8,1 */
+@property (nonatomic, copy) NSString *internalName;
+/** 设备型号通用名称，如：iPhone 6s */
+@property (nonatomic, copy) NSString *modelName;
+/** 屏幕尺寸，即对角线长度，单位英寸 */
+@property (nonatomic, assign) CGFloat diagonalSize;
+/** 屏幕像素密度（Pixel Per Inch） */
+@property (nonatomic, assign) NSInteger PPI;
 
 @end
