@@ -280,6 +280,9 @@ NSString *const kTCInfoCFBundleName = @"CFBundleName";
                                     // Pro 10.5-inch
                                     @"iPad7,3":@[@"iPad Pro 10.5-inch", @10.5, @264],
                                     @"iPad7,4":@[@"iPad Pro 10.5-inch", @10.5, @264],
+                                    // 6
+                                    @"iPad7,5":@[@"iPad 6", @9.7, @264],    // iPad 6 (WiFi)
+                                    @"iPad7,6":@[@"iPad 6", @9.7, @264],    // iPad 6 (4G)
                                     
                                     // iPod
                                     // 1
