@@ -224,6 +224,13 @@ NSString *const kTCInfoCFBundleName = @"CFBundleName";
                                     // X
                                     @"iPhone10,3":@[@"iPhone X", @5.8, @458],   // iPhone X (CDMA)
                                     @"iPhone10,6":@[@"iPhone X", @5.8, @458],   // iPhone X (GSM)
+                                    // XR
+                                    @"iPhone11,8":@[@"iPhone XR", @6.1, @326],
+                                    // XS
+                                    @"iPhone11,2":@[@"iPhone XS", @5.8, @458],
+                                    // XS Max
+                                    @"iPhone11,4":@[@"iPhone XS Max", @6.5, @458],  // China
+                                    @"iPhone11,6":@[@"iPhone XS Max", @6.5, @458],  // Global
                                     
                                     // iPad
                                     // 1
