@@ -238,20 +238,20 @@ NSString *const kTCInfoCFBundleName = @"CFBundleName";
                                     // 3G
                                     @"iPad1,2":@[@"iPad 3G", @9.7, @132],
                                     // 2
-                                    @"iPad2,1":@[@"iPad 2", @9.7, @132],    // iPad 2 (WiFi)
+                                    @"iPad2,1":@[@"iPad 2", @9.7, @132],    // iPad 2 (Wi-Fi)
                                     @"iPad2,2":@[@"iPad 2", @9.7, @132],    // iPad 2 (GSM)
                                     @"iPad2,3":@[@"iPad 2", @9.7, @132],    // iPad 2 (CDMA)
                                     @"iPad2,4":@[@"iPad 2", @9.7, @132],    // iPad 2 (32nm)
                                     // Mini
-                                    @"iPad2,5":@[@"iPad Mini", @7.9, @163], // iPad Mini (WiFi)
+                                    @"iPad2,5":@[@"iPad Mini", @7.9, @163], // iPad Mini (Wi-Fi)
                                     @"iPad2,6":@[@"iPad Mini", @7.9, @163], // iPad Mini (GSM)
                                     @"iPad2,7":@[@"iPad Mini", @7.9, @163], // iPad Mini (CDMA)
                                     // 3
-                                    @"iPad3,1":@[@"iPad 3", @9.7, @264],    // iPad 3 (WiFi)
+                                    @"iPad3,1":@[@"iPad 3", @9.7, @264],    // iPad 3 (Wi-Fi)
                                     @"iPad3,2":@[@"iPad 3", @9.7, @264],    // iPad 3 (CDMA)
                                     @"iPad3,3":@[@"iPad 3", @9.7, @264],    // iPad 3 (4G)
                                     // 4
-                                    @"iPad3,4":@[@"iPad 4", @9.7, @264],    // iPad 4 (WiFi)
+                                    @"iPad3,4":@[@"iPad 4", @9.7, @264],    // iPad 4 (Wi-Fi)
                                     @"iPad3,5":@[@"iPad 4", @9.7, @264],    // iPad 4 (4G)
                                     @"iPad3,6":@[@"iPad 4", @9.7, @264],    // iPad 4 (CDMA)
                                     // Air
@@ -281,15 +281,25 @@ NSString *const kTCInfoCFBundleName = @"CFBundleName";
                                     // 5
                                     @"iPad6,11":@[@"iPad 5", @9.7, @264],
                                     @"iPad6,12":@[@"iPad 5", @9.7, @264],
-                                    // Pro 2 12.9-inch
+                                    // Pro 2 12.9-inch (2nd generation)
                                     @"iPad7,1":@[@"iPad Pro 2 12.9-inch", @12.9, @264],
                                     @"iPad7,2":@[@"iPad Pro 2 12.9-inch", @12.9, @264],
                                     // Pro 10.5-inch
                                     @"iPad7,3":@[@"iPad Pro 10.5-inch", @10.5, @264],
                                     @"iPad7,4":@[@"iPad Pro 10.5-inch", @10.5, @264],
                                     // 6
-                                    @"iPad7,5":@[@"iPad 6", @9.7, @264],    // iPad 6 (WiFi)
+                                    @"iPad7,5":@[@"iPad 6", @9.7, @264],    // iPad 6 (Wi-Fi)
                                     @"iPad7,6":@[@"iPad 6", @9.7, @264],    // iPad 6 (4G)
+                                    // Pro 11-inch
+                                    @"iPad8,1":@[@"iPad Pro 11-inch", @11.0, @264], // iPad Pro (Cellular)
+                                    @"iPad8,2":@[@"iPad Pro 11-inch", @11.0, @264], // iPad Pro (Wi-Fi, 1 TB)
+                                    @"iPad8,3":@[@"iPad Pro 11-inch", @11.0, @264], // iPad Pro (Cellular)
+                                    @"iPad8,4":@[@"iPad Pro 11-inch", @11.0, @264], // iPad Pro (Cellular, 1 TB)
+                                    // Pro 12.9-inch (3rd generation)
+                                    @"iPad8,5":@[@"iPad Pro 12.9-inch", @12.9, @264], // iPad Pro (Cellular)
+                                    @"iPad8,6":@[@"iPad Pro 12.9-inch", @12.9, @264], // iPad Pro (Wi-Fi, 1 TB)
+                                    @"iPad8,7":@[@"iPad Pro 12.9-inch", @12.9, @264], // iPad Pro (Cellular)
+                                    @"iPad8,8":@[@"iPad Pro 12.9-inch", @12.9, @264], // iPad Pro (Cellular, 1 TB)
                                     
                                     // iPod
                                     // 1
